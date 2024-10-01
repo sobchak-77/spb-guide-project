@@ -5,43 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Путеводитель по Санкт-Петербургу</title>
+  <!-- fonts -->
+  <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Raleway-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Raleway-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- css styles -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="libs/animate.min.css">
   <link rel="stylesheet" href="libs/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body class="page">
   <header class="header">
+    <!-- HEADER NAVIGATION -->
     <div class="header__box">
-      <div class="header__wrap wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.5s">
+      <div class="header__wrap wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
         <nav class="header__nav nav">
           <ul class="header__list list">
-            <li class="header__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.8s">
+            <li class="header__item wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
               <a class="header__link link-style" href="#city">О&nbsp;городе</a>
             </li>
-            <li class="header__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
+            <li class="header__item wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.7s">
               <a class="header__link link-style" href="#history">История</a>
             </li>
-            <li class="header__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+            <li class="header__item wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.8s">
               <a class="header__link link-style" href="#sights">Достопримечательности</a>
             </li>
-            <li class="header__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s">
+            <li class="header__item wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.9s">
               <a class="header__link link-style" href="#budget">Бюджет поездки</a>
             </li>
-            <li class="header__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.2s">
+            <li class="header__item wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1s">
               <a class="header__link link-style" href="#map">Карта Петербурга</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
+    <!-- MAIN TITLE -->
     <div class="hero container">
-      <h1 class="hero__title title wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="0.5s">
+      <h1 class="hero__title title wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
         Путеводитель по&nbsp;Санкт-Петербургу
       </h1>
-      <p class="hero__descr descr wow fadeIn" data-wow-duration="2s" data-wow-delay="0.9s">
+      <p class="hero__descr descr wow fadeIn" data-wow-duration="1.8s" data-wow-delay="0.9s">
         Рассказываем самое интересное
       </p>
     </div>
@@ -50,21 +58,23 @@
   <main>
     <section class="city" id="city">
       <div class="city__container container">
-        <h2 class="city__title section-title title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">О&nbsp;городе</h2>
+        <h2 class="city__title section-title title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+          О&nbsp;городе</h2>
       </div>
-      <div class="swiper-container swiper-container--gap wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay="0.8s">
+      <div class="swiper-container swiper-container--gap wow fadeInLeft" data-wow-duration="1.4s" data-wow-delay="0.6s">
         <div class="swiper-wrapper">
+          <!-- SLIDE #1 -->
           <div class="swiper-slide">
             <picture class="city__picture">
               <img class="city__img img-style" src="img/city-img-1.png" alt="Петергофский Большой дворец с фонтанами">
             </picture>
             <div class="city__text-wrap">
-              <p class="city__descr descr wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1.2s">
+              <p class="city__descr descr wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1s">
                 Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых городов России, который привлекает туристов
                 со&nbsp;всего мира своей&nbsp;архитектурой, культурными достопримечательностями
                 и&nbsp;богатой&nbsp;историей.
               </p>
-              <div class="swiper-btn-wrap wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1.2s">
+              <div class="swiper-btn-wrap wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1s">
                 <div class="swiper-btn swiper-button-prev">
                   <svg class="swiper-icon" width="76" height="76" viewBox="0 0 76 76" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -86,16 +96,17 @@
               </div>
             </div>
           </div>
+          <!-- SLIDE #2 -->
           <div class="swiper-slide">
             <picture class="city__picture">
               <img class="city__img img-style" src="img/city-img-2.png" alt="Памятник Петру Первому - 'Медный всадник'">
             </picture>
             <div class="city__text-wrap">
-              <p class="city__descr descr wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1.2s">
+              <p class="city__descr descr wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1s">
                 Город был основан в&nbsp;1703 году Петром I&nbsp;на берегах реки Невы и&nbsp;стал символом силы
                 и&nbsp;могущества Российской империи.
               </p>
-              <div class="swiper-btn-wrap wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1.2s">
+              <div class="swiper-btn-wrap wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1s">
                 <div class="swiper-btn swiper-button-prev">
                   <svg class="swiper-icon" width="76" height="76" viewBox="0 0 76 76" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -117,16 +128,18 @@
               </div>
             </div>
           </div>
+          <!-- SLIDE #3 -->
           <div class="swiper-slide">
             <picture class="city__picture">
-              <img class="city__img img-style" src="img/city-img-3.png" alt="Санкт-Петербургская пристань с экскурсионными кораблями на Неве">
+              <img class="city__img img-style" src="img/city-img-3.png"
+                alt="Санкт-Петербургская пристань с экскурсионными кораблями на Неве">
             </picture>
             <div class="city__text-wrap">
-              <p class="city__descr descr wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1.2s">
+              <p class="city__descr descr wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1s">
                 Сегодня Санкт-Петербург&nbsp;&mdash; это не&nbsp;только культурный центр, но&nbsp;и&nbsp;один
                 из&nbsp;крупнейших портов мира, который является важным экономическим центром России.
               </p>
-              <div class="swiper-btn-wrap wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1.2s">
+              <div class="swiper-btn-wrap wow fadeIn" data-wow-duration="1.6s" data-wow-delay="1s">
                 <div class="swiper-btn swiper-button-prev">
                   <svg class="swiper-icon" width="76" height="76" viewBox="0 0 76 76" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -153,9 +166,10 @@
       </div>
     </section>
     <section class="about">
-      <div class="about__container container wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="1s">
+      <!-- DESCRIPTION TEXT -->
+      <div class="about__container container wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="0.5s">
         <h2 class="about__title visually-hidden">О нас</h2>
-        <p class="about__descr descr wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="1s">
+        <p class="about__descr descr wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.5s">
           В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых интересных местах Санкт-Петербурга, которые
           обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.
         </p>
@@ -163,11 +177,14 @@
     </section>
     <section class="history" id="history">
       <div class="history__container container">
-        <h2 class="history__title section-title title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">История</h2>
+        <!-- HISTORY TREE TITLE -->
+        <h2 class="history__title section-title title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+          История</h2>
         <div class="history__wrap">
           <div class="timeline">
             <ul class="timeline__list list">
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.8s">
+              <!-- BRANCH #1 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">16 (27&nbsp;по&nbsp;новому стилю)<br>мая 1703 года</h3>
@@ -175,12 +192,14 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-1.png" alt="Портрет основателя Санкт-Петербурга Петра Первого">
+                      <img class="timeline__img img-style" src="img/history-img-1.png"
+                        alt="Портрет основателя Санкт-Петербурга Петра Первого">
                     </picture>
                   </div>
                 </div>
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.1s" data-wow-delay="0.8s">
+              <!-- BRANCH #2 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.1s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">21&nbsp;мая 1712 года</h3>
@@ -188,12 +207,14 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-2.png" alt="Историческая гравюра Петропавловской крепости">
+                      <img class="timeline__img img-style" src="img/history-img-2.png"
+                        alt="Историческая гравюра Петропавловской крепости">
                     </picture>
                   </div>
                 </div>
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="0.8s">
+              <!-- BRANCH #3 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">1914 год</h3>
@@ -201,12 +222,14 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-3.png" alt="Историческая гравюра Невского проспекта">
+                      <img class="timeline__img img-style" src="img/history-img-3.png"
+                        alt="Историческая гравюра Невского проспекта">
                     </picture>
                   </div>
                 </div>
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="0.8s">
+              <!-- BRANCH #4 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">1918 год</h3>
@@ -214,12 +237,14 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-4.png" alt="Спасская башня Московского Кремля">
+                      <img class="timeline__img img-style" src="img/history-img-4.png"
+                        alt="Спасская башня Московского Кремля">
                     </picture>
                   </div>
                 </div>
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.8s">
+              <!-- BRANCH #5 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.4s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">26&nbsp;января 1924 года</h3>
@@ -228,12 +253,14 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-5.png" alt="Вырезка из газеты 1924-го года о переименовании города в Ленинград">
+                      <img class="timeline__img img-style" src="img/history-img-5.png"
+                        alt="Вырезка из газеты 1924-го года о переименовании города в Ленинград">
                     </picture>
                   </div>
                 </div>
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s">
+              <!-- BRANCH #6 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">8&nbsp;сентября 1941 &mdash; 27&nbsp;января 1944&nbsp;гг</h3>
@@ -241,12 +268,14 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-6.png" alt="Ленинград в годы Великой Отечественной войны">
+                      <img class="timeline__img img-style" src="img/history-img-6.png"
+                        alt="Ленинград в годы Великой Отечественной войны">
                     </picture>
                   </div>
                 </div>
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.6s" data-wow-delay="0.8s">
+              <!-- BRANCH #7 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.6s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">8&nbsp;мая 1965 года</h3>
@@ -256,26 +285,31 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-7.png" alt="Медаль 'Золотая звезда', вручаемая Городу-герою">
+                      <img class="timeline__img img-style" src="img/history-img-7.png"
+                        alt="Медаль 'Золотая звезда', вручаемая Городу-герою">
                     </picture>
                   </div>
                 </div>
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.7s" data-wow-delay="0.8s">
+              <!-- BRANCH #8 -->
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.7s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">6&nbsp;сентября 1991 года</h3>
-                    <p class="timeline__descr descr">Возвращение городу прежнего названия Санкт-Петербург, о&nbsp;чём был
+                    <p class="timeline__descr descr">Возвращение городу прежнего названия Санкт-Петербург, о&nbsp;чём
+                      был
                       подписан Указ Президиума Верховного Совета РСФСР</p>
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-8.png" alt="Герб Российской Советской Федеративной Социалистической Республики">
+                      <img class="timeline__img img-style" src="img/history-img-8.png"
+                        alt="Герб Российской Советской Федеративной Социалистической Республики">
                     </picture>
                   </div>
                 </div>
+                <!-- BRANCH #9 -->
               </li>
-              <li class="timeline__item wow fadeInDown" data-wow-duration="1.8s" data-wow-delay="0.8s">
+              <li class="timeline__item wow fadeInDown" data-wow-duration="1.8s" data-wow-delay="0.5s">
                 <div class="timeline__content">
                   <div class="timeline__text">
                     <h3 class="timeline__subtitle title">22&nbsp;сентября 2012 года</h3>
@@ -283,7 +317,8 @@
                   </div>
                   <div class="timeline__img-wrap">
                     <picture class="timeline__picture">
-                      <img class="timeline__img img-style" src="img/history-img-9.png" alt="Счастливый родитель пятимиллионного жителя Санкт-Петербурга">
+                      <img class="timeline__img img-style" src="img/history-img-9.png"
+                        alt="Счастливый родитель пятимиллионного жителя Санкт-Петербурга">
                     </picture>
                   </div>
                 </div>
@@ -295,20 +330,24 @@
     </section>
     <section class="sights" id="sights">
       <div class="sights__container container">
-        <h2 class="sights__title section-title title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">Достопримечательности</h2>
+        <!-- SIGHTS TITLE AND TEXT -->
+        <h2 class="sights__title section-title title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+          Достопримечательности</h2>
         <div class="sights__wrap-text">
-          <p class="sights__descr descr wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">
+          <p class="sights__descr descr wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
             Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками. Это
             один из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой
             статье мы&nbsp;расскажем о&nbsp;самых знаменитых достопримечательностях Санкт-Петербурга.
           </p>
         </div>
         <ul class="sights__list list">
-          <li class="sights__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+          <!-- SIGHTS CARD #1 -->
+          <li class="sights__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
             <h3 class="sights__subtitle title">Эрмитаж</h3>
             <div class="sights__wrap">
               <picture class="sights__picture">
-                <img class="sights__image img-style" src="img/sight-img-1.png" alt="Одна из множества галерей музея Эрмитаж">
+                <img class="sights__image img-style" src="img/sight-img-1.png"
+                  alt="Одна из множества галерей музея Эрмитаж">
               </picture>
               <p class="sights__text descr">
                 Эрмитаж&nbsp;&mdash; один из&nbsp;самых известных музеев мира, который находится в&nbsp;самом сердце
@@ -319,11 +358,13 @@
               </p>
             </div>
           </li>
-          <li class="sights__item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">
+          <!-- SIGHTS CARD #2 -->
+          <li class="sights__item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
             <h3 class="sights__subtitle title">Дворцовая площадь</h3>
             <div class="sights__wrap">
               <picture class="sights__picture">
-                <img class="sights__image img-style" src="img/sight-img-2.png" alt="Здание Главного штаба на Дворцовой площади">
+                <img class="sights__image img-style" src="img/sight-img-2.png"
+                  alt="Здание Главного штаба на Дворцовой площади">
               </picture>
               <div class="sights__text-paragraph">
                 <p class="sights__text descr">
@@ -342,11 +383,13 @@
               </div>
             </div>
           </li>
-          <li class="sights__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+          <!-- SIGHTS CARD #3 -->
+          <li class="sights__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
             <h3 class="sights__subtitle title">Зимний дворец</h3>
             <div class="sights__wrap">
               <picture class="sights__picture">
-                <img class="sights__image img-style" src="img/sight-img-3.png" alt="Вид на Зимний дворец со стороны Дворцовой площади">
+                <img class="sights__image img-style" src="img/sight-img-3.png"
+                  alt="Вид на Зимний дворец со стороны Дворцовой площади">
               </picture>
               <p class="sights__text descr">
                 Зимний дворец&nbsp;&mdash; один из&nbsp;самых красивых и&nbsp;известных дворцов России. Он&nbsp;был
@@ -355,11 +398,13 @@
               </p>
             </div>
           </li>
-          <li class="sights__item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">
+          <!-- SIGHTS CARD #4 -->
+          <li class="sights__item wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
             <h3 class="sights__subtitle title">Петергоф</h3>
             <div class="sights__wrap">
               <picture class="sights__picture">
-                <img class="sights__image img-style" src="img/sight-img-4.png" alt="Самсоновский канал и гавань Петергофа">
+                <img class="sights__image img-style" src="img/sight-img-4.png"
+                  alt="Самсоновский канал и гавань Петергофа">
               </picture>
               <p class="sights__text descr">
                 Петергоф&nbsp;&mdash; это знаменитый дворцово-парковый комплекс, расположенный на&nbsp;берегу Финского
@@ -369,11 +414,13 @@
               </p>
             </div>
           </li>
-          <li class="sights__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+          <!-- SIGHTS CARD #5 -->
+          <li class="sights__item wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
             <h3 class="sights__subtitle title">Исаакиевский собор</h3>
             <div class="sights__wrap">
               <picture class="sights__picture">
-                <img class="sights__image img-style" src="img/sight-img-5.png" alt="Вид на Исаакиевский собор и Санкт-Петербург с высоты птичего полета">
+                <img class="sights__image img-style" src="img/sight-img-5.png"
+                  alt="Вид на Исаакиевский собор и Санкт-Петербург с высоты птичего полета">
               </picture>
               <p class="sights__text descr">
                 Исаакиевский собор&nbsp;&mdash; это один из&nbsp;самых красивых и&nbsp;величественных храмов
@@ -389,14 +436,17 @@
     </section>
     <section class="budget" id="budget">
       <div class="budget__container container">
-        <h2 class="budget__title section-title title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">Бюджет поездки</h2>
+        <!-- BUDGET TITLE AND TEXT -->
+        <h2 class="budget__title section-title title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">Бюджет
+          поездки</h2>
         <div class="budget__wrap-text">
-          <p class="budget__descr descr wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.8s">
+          <p class="budget__descr descr wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
             Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам для путешествия.
           </p>
         </div>
         <ul class="budget__list list">
-          <li class="budget__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.8s">
+          <!-- BUDGET CARD #1 -->
+          <li class="budget__item wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <svg class="budget__icon" width="66" height="56" viewBox="0 0 66 56" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -406,7 +456,8 @@
             <h3 class="budget__subtitle title">Проживание</h3>
             <span class="budget__price">от&nbsp;2000&nbsp;₽</span>
           </li>
-          <li class="budget__item budget__item--diner wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">
+          <!-- BUDGET CARD #2 -->
+          <li class="budget__item budget__item--diner wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
             <svg class="budget__icon" width="49" height="56" viewBox="0 0 49 56" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -425,7 +476,8 @@
             <h3 class="budget__subtitle title">Средний чек в&nbsp;ресторане</h3>
             <span class="budget__price">1300&nbsp;₽</span>
           </li>
-          <li class="budget__item budget__item--tour wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+          <!-- BUDGET CARD #3 -->
+          <li class="budget__item budget__item--tour wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.7s">
             <svg class="budget__icon" width="60" height="58" viewBox="0 0 60 58" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -435,7 +487,8 @@
             <h3 class="budget__subtitle title">Экскурсии</h3>
             <span class="budget__price">от&nbsp;1000&nbsp;₽</span>
           </li>
-          <li class="budget__item budget__item--shop wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s">
+          <!-- BUDGET CARD #4 -->
+          <li class="budget__item budget__item--shop wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.8s">
             <svg class="budget__icon" width="38" height="60" viewBox="0 0 38 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -453,9 +506,11 @@
     </section>
     <section class="section-map" id="map">
       <div class="section-map__container container">
-        <h2 class="section-map__title section-title title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.8s">Карта Петербурга</h2>
+        <h2 class="section-map__title section-title title wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+          Карта Петербурга</h2>
       </div>
-      <div class="map wow wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.8s" id="mapPetrograd"></div>
+      <!-- CITY MAP -->
+      <div class="map wow wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.5s" id="mapPetrograd"></div>
     </section>
   </main>
 
@@ -466,24 +521,25 @@
           <span class="footer__year">&copy;&nbsp;2023</span>
           <a class="footer__text link-style" href="#">Политика конфиденциальности</a>
         </div>
+        <!-- FOOTER NAVIGATION -->
         <nav class="footer__nav">
-            <ul class="footer__list list">
-              <li class="footer__item">
-                <a class="footer__link link-style" href="#city">О&nbsp;городе</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link link-style" href="#history">История</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link link-style" href="#sights">Достопримечательности</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link link-style" href="#budget">Бюджет поездки</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link link-style" href="#map">Карта Петербурга</a>
-              </li>
-            </ul>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a class="footer__link link-style" href="#city">О&nbsp;городе</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-style" href="#history">История</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-style" href="#sights">Достопримечательности</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-style" href="#budget">Бюджет поездки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-style" href="#map">Карта Петербурга</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -492,7 +548,7 @@
   <script src="libs/wow.min.js"></script>
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-  <script defer src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
